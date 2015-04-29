@@ -3,8 +3,11 @@ lock "3.2.1"
 set :application, "hudson"
 set :repo_url, "git@github.com:kannans/hudson.git"
 
-set :deploy_to, "/var/www/#{fetch(:application}"
+set :deploy_to, "/var/www/#{fetch(:application)}"
 set :deploy_user, "rails"
+
+set :sudo_user, "rails"
+set :use_sudo, false
 
 set :rbenv_type, :user # or :system, depends on your rbenv setup
 set :rbenv_ruby, "2.1.2"
