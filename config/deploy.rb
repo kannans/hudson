@@ -1,7 +1,7 @@
 lock "3.2.1"
 
 set :application, "hudson"
-set :repo_url, "git@github.com:vladigleba/hudson.git"
+set :repo_url, "git@github.com:kannans/hudson.git"
 
 set :deploy_to, "/var/www/#{fetch(:application}"
 set :deploy_user, "rails"
