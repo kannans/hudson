@@ -6,12 +6,14 @@ set :repo_url, "git@github.com:kannans/hudson.git"
 set :deploy_to, "/var/www/#{fetch(:application)}"
 set :deploy_user, "rails"
 
+
+#myown conf
 set :sudo_user, "rails"
 set :use_sudo, false
 set :ssh_options, { :forward_agent => true }
 set :pty, true
 set :deploy_via, :remote_cache
-set :use_sudo, false
+
 
 set :rbenv_type, :user # or :system, depends on your rbenv setup
 set :rbenv_ruby, "2.1.2"
